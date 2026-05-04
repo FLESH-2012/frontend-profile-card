@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men haqimda.</title>
+    <style>
+        body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2d3436;
+  font-family: sans-serif;
+}
+
+.card {
+  width: 320px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h2 {
+  margin: 10px 0 5px;
+}
+
+h4 {
+  margin: 0 0 10px;
+  color: gray;
+}
+
+p {
+  font-size: 14px;
+  color: #333;
+}
+
+button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  background: #0984e3;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0652dd;
+}
+    </style>
+</head>
+<body>
+<div class="card">
+  <img src="https://picsum.photos/300/200" alt="">
+
+  <h2>Shahriyor</h2>
+  <h4>Frontend Developer</h4>
+
+  <p id="text">
+    I am a beginner frontend developer who loves creating beautiful and simple websites using HTML, CSS and JavaScript. 
+    I enjoy learning new technologies and improving my coding skills every day.
+  </p>
+
+  <button onclick="changeText()">Read More</button>
+</div>
+
+<script src="script.js">
+    function changeText() {
+  document.getElementById("text").innerText =
+    "I am working hard to become a professional frontend developer. I want to build modern, responsive and user-friendly websites in the future.";
+}
+</script>
+</body>
+</html>
+</body>
+</html>
